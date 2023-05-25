@@ -1,5 +1,5 @@
 # ros-docker
-This repository contains required files to run ROS noetic (or any other version of ROS) inside a docker container (with GUI support as well). User "docker" is created inside the container without password and with sudo privileges. The default branch (`master`) uses `bash` as default shell, but `zsh` branch can be used if you prefer `zsh` instead.
+This repository contains required files to run ROS noetic (or any other version of ROS) inside a docker container (with GUI support as well). User "docker" is created inside the container without password and with sudo privileges. The default branch (`master`) uses `bash` as default shell, but `zsh` branch can be used if you prefer `zsh` as your shell instead.
 
 
 ### Prerequisites
