@@ -15,7 +15,7 @@ git clone https://github.com/Silviis/ros-docker.git
 
 Then place your ROS workspace folder inside the cloned repository. The workspace should be named `catkin_ws` (can be edited in `docker-compose.yml`). 
 
-If you have your workspace folder in version control, the easiest way to utilize this repository is to fork this repository and then add your catkin workspace as a submodule to that repository. To do so, first remove the `catkin_ws` folder from the repository with:
+**If you have your workspace folder in version control, the easiest way to utilize this repository is to fork this repository and then add your catkin workspace as a submodule to that repository.** To do so, first remove the `catkin_ws` folder from the repository with:
 ```sh
 cd ros-docker
 rmdir catkin_ws
