@@ -22,3 +22,4 @@ RUN echo "export NO_AT_BRIDGE=1" >> /home/docker/.zshrc
 RUN echo "cd /home/docker/" >> /home/docker/.zshrc  # Change default directory to home directory
 RUN sed -i "s!robbyrussell!${ZSH_THEME}!g" /home/docker/.zshrc  # Replace default theme
 RUN chsh -s /bin/zsh docker
+RUN runuser -l docker -c 'rosdep update'

@@ -12,6 +12,8 @@ RUN useradd -m $USERNAME && \
         usermod  --uid 1000 $USERNAME && \
         groupmod --gid 1000 $USERNAME
 
-RUN echo "source /ros_entrypoint.sh" >> /home/docker/.bashrc
+RUN echo "source /opt/ros/noetic/setup.bash" >> /home/docker/.bashrc  # Source ROS installation
 RUN echo "export NO_AT_BRIDGE=1" >> /home/docker/.bashrc
+RUN echo "cd /home/docker/" >> /home/docker/.bashrc  # Change default directory to home directory
 RUN apt update -y && apt install nano net-tools python3-catkin-tools -y 
+RUN runuser -l docker -c 'rosdep update'
