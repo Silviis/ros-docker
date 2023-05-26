@@ -2,7 +2,9 @@ version: '2'
 
 services:
   ros:
-    build: .
+    build:
+      context: .
+      dockerfile: bash_ros.Dockerfile
     network_mode: host
     user: "docker"
     environment:
