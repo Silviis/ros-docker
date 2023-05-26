@@ -20,7 +20,6 @@ Only Docker is needed to run the container. If you use older versions of docker,
 3. (**OPTIONAL**) If you have your workspace folder in version control, the easiest way to utilize this repository is to fork this repository and then add your catkin workspace as a submodule to that     repository. To do so, first clone your fork, then remove the `catkin_ws` folder from the repository with:
       ```sh
       cd ros-docker
-      rmdir catkin_ws
       ```
 
       Then add your workspace as a submodule with:
