@@ -8,23 +8,24 @@ Only Docker is needed to run the container. If you use older versions of docker,
 
 ## Getting Started
 
-Clone this repository with
-```sh
-git clone https://github.com/Silviis/ros-docker.git
-```
+1. Clone this repository with
+   ```sh
+   git clone https://github.com/Silviis/ros-docker.git
+   ```
 
-Then place your ROS workspace folder inside the cloned repository. The workspace should be named `catkin_ws` (can be edited in `docker-compose.yml`). 
+2. Then place your ROS workspace folder inside the cloned repository manually. The workspace should be named `catkin_ws` (can be edited in `docker-compose.yml`). 
 
-**If you have your workspace folder in version control, the easiest way to utilize this repository is to fork this repository and then add your catkin workspace as a submodule to that repository.** To do so, first clone your fork, then remove the `catkin_ws` folder from the repository with:
-```sh
-cd ros-docker
-rmdir catkin_ws
-```
+3. (**OPTIONAL**) If you have your workspace folder in version control, the easiest way to utilize this repository is to fork this repository and then add your catkin workspace as a submodule to that     repository. To do so, first clone your fork, then remove the `catkin_ws` folder from the repository with:
+      ```sh
+      cd ros-docker
+      rmdir catkin_ws
+      ```
 
-Then add your workspace as a submodule with:
-```sh
-git submodule add https://github.com/yourusername/your_catkin_ws.git catkin_ws
-```
+      Then add your workspace as a submodule with:
+      ```sh
+      git submodule add https://github.com/yourusername/your_catkin_ws.git catkin_ws
+      ```
+   
 
 
 
