@@ -15,7 +15,7 @@ RUN useradd -m $USERNAME && \
         usermod  --uid 1000 $USERNAME && \
         groupmod --gid 1000 $USERNAME
 
-RUN apt update -y && apt install nano net-tools python3-catkin-tools zsh git curl -y
+RUN apt update -y && apt install nano net-tools python3-catkin-tools zsh git curl openssh-server ros-noetic-turtlebot3 ros-noetic-tf2-tools -y
 RUN runuser -l docker -c 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended'
 RUN echo "source /opt/ros/noetic/setup.zsh" >> /home/docker/.zshrc  # Source ROS installation
 RUN echo "export NO_AT_BRIDGE=1" >> /home/docker/.zshrc  
