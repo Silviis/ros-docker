@@ -15,5 +15,6 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $PWD/catkin_ws:/home/docker/catkin_ws
+      - $PWD/data:/home/docker/data
     command: stdbuf -o L roscore
     restart: always
