@@ -1,12 +1,12 @@
 # ros-docker
-This repository contains required files to run ROS noetic (or any other version of ROS) inside a docker container (with GUI support as well). User "docker" is created inside the container without password and with sudo privileges. Default shell for container is bash, but this can be changed by changing the `dockerfile: bash_ros.Dockerfile` line to `dockerfile: zsh_ros.Dockerfile` in `docker-compose.yml` file.
+This repository contains required files to run ROS noetic (or any other version of ROS) inside a Docker container (with GUI support as well). User "docker" is created inside the container without password and with sudo privileges. Default shell for container is bash, but this can be changed to zsh by changing the `dockerfile: bash_ros.Dockerfile` line to `dockerfile: zsh_ros.Dockerfile` in `docker-compose.yml` file.
 
-GUI applications (such as RViz and Gazebo) should work on Windows 10/11 with WSL2, but for native Windows installation (running Docker inside Windows without WSL), you most likely need to run X Server in order for the GUI applications to work (e.g. VcXsrv).
+GUI applications (such as RViz and Gazebo) should work on Windows 10/11 with WSL2.
 
 
 ### Prerequisites
 
-Only Docker is needed to run the container. If you use older versions of docker, you will have to install Docker Compose as well (as it doesn't come with the Docker package by default). To install Docker Compose, follow the instructions [here](https://docs.docker.com/compose/install/).
+Only Docker is needed to run the container. If you use older versions of Docker, you will have to install Docker Compose as well (as it doesn't come with the Docker package by default). To install Docker Compose, follow the instructions [here](https://docs.docker.com/compose/install/).
 
 ## Getting Started
 
@@ -44,7 +44,7 @@ Only Docker is needed to run the container. If you use older versions of docker,
    docker compose up -d
    ```
 
-   This will pull the base image from Docker Hub, make some changes to it (see `Dockerfile`) and run it in detached mode.
+   This will pull the base image from DockerHub, make some changes to it (see `Dockerfile`) and run it in detached mode.
 
 3. To attach a shell to the running container run the following command:
    ```sh
