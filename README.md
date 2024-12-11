@@ -1,5 +1,5 @@
 # ros-docker
-This repository contains required files to run ROS noetic (or any other version of ROS) inside a Docker container (with GUI support as well). User "docker" is created inside the container without password and with sudo privileges. Default shell for container is bash, but this can be changed to zsh by changing the `dockerfile: bash_ros.Dockerfile` line to `dockerfile: zsh_ros.Dockerfile` in `docker-compose.yml` file.
+This repository contains required files to run ROS noetic (or any other version of ROS) inside a Docker container (with GUI support). User "docker" is created inside the container without password and with sudo privileges. Default shell for container is bash, but this can be changed to zsh by changing the `dockerfile: bash_ros.Dockerfile` line to `dockerfile: zsh_ros.Dockerfile` in `docker-compose.yml` file.
 
 GUI applications (such as RViz and Gazebo) should work on Windows 10/11 with WSL2.
 
